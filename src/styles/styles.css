@@ -127,3 +127,8 @@ body{
 .input-box .input-field:focus-within{
     outline: 2px solid  rgb(197, 139, 149);
 }
+
+input:-webkit-autofill{
+    -webkit-box-shadow:0 0 0 100px white inset !important;
+    color: #000;
+}
