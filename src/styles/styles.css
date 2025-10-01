@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"Poppins", sans-serif;
+    font-family:"Noto Sans JP", sans-serif;
 }
 
 body{
@@ -12,7 +13,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(197, 139, 149);
+    background-color: #008F8C;
 }
 
 #form-container{
@@ -27,7 +28,7 @@ body{
 }
 
 .btn-default{
-    background-color:rgb(197, 139, 149) ;
+    background-color:#008F8C;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,8 +47,9 @@ body{
 }
 
 .btn-default:hover{
-    background-color:rgb(228, 173, 182) ;
+    background-color:#24adab;
 }
+
 
 
 #form-header{
@@ -68,7 +70,7 @@ body{
     width: 100px;
     height: 3px;
     border-radius: 30px;
-    background-color: rgb(197, 139, 149);
+    background-color:#008F8C;
     left: 0;
     bottom: 0;
 }
@@ -125,10 +127,44 @@ body{
 }
 
 .input-box .input-field:focus-within{
-    outline: 2px solid  rgb(197, 139, 149);
+    outline: 2px solid  #008F8C;
 }
 
 input:-webkit-autofill{
     -webkit-box-shadow:0 0 0 100px white inset !important;
     color: #000;
+}
+
+.radio-container{
+    grid-column: span 2;
+}
+
+#gender-inputs{
+    display: flex;
+    gap: 20px;
+}
+
+.radio-box{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.form-control[type='radio']{
+    accent-color: #008F8C;
+    border: none;
+}
+
+@media screen and (max-width: 500px){
+    #form-container{
+        width: 100%;
+        min-height: 100vh;
+        padding: 32px;
+    }
+
+    #input_container{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
 }
