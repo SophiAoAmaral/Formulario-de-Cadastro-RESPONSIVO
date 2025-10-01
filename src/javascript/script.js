@@ -15,3 +15,5 @@ passwordIcons.forEach(icon => {
         }
     });
 });
+
+
